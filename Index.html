@@ -3,15 +3,19 @@
     <head>
         <title>Sedona</title>
         <meta name="description" content="Бронирование отелей">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="index-styles.css" type="text/css">
+
     </head>
-    <body>
+    <body class="main-body">
         <header>
-            <nav class="menu-list">
-                <ul>
+            <nav class="menu">
+                <ul class="menu-list">
                     <li class="menu-list-item"><a href="#">Инормация</a></li>
                     <li class="menu-list-item"><a href="#">Фото и видео</a></li>
+                    <li><img src="images/Logo-CityOfSedona.png" alt="Logo City Of Sedona"></li>
                     <li class="menu-list-item"><a href="#">Карта штата</a></li>
-                    <li class="menu-list-item"><a href="#">Гостиницы</a></li>
+                    <li class="menu-list-item"><a href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -90,14 +94,25 @@
                     </li>
                     <li>
                         <ul>
-                            <li><a href=""><img src="" alt="twitter"></a></li>
-                            <li><a href=""></a><img src="" alt="facebook"></li>
-                            <li><a href=""></a><img src="" alt="yuotube"></li>
+                            <li><a href=""><img src="Images/logo-twitter.svg" width="17" height="15" alt="twitter"></a></li>
+                            <li><a href=""></a><img src="Images/logo-fb.svg" width="17" height="22" alt="facebook"></li>
+                            <li><a href=""></a><img src="Images/logo-youtube.svg" width="20" height="16" alt="yuotube"></li>
                         </ul>
                     </li>
-                    <li><p>WEBSITE by</p><p><img src="images/logo_htmlAcademy.svg" alt=""></p></li>
+                    <li><p>WEBSITE by</p><p><img src="Images/logo_htmlAcademy.svg" width="115" height="41"  alt=""></p></li>
                 </ul>
             </div>
         </footer>
+        <section>
+            <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
+            <form action="https://echo.htmlacademy.ru" class="search" method="POST"></form>
+                <p><label for="date-in">Дата заезда: <input id="date-in" type="date"></label></p>
+                <p><label for="date-out">Дата выезда: <input id="date-out" type="date"></label></p>
+                <p><label for="adults">Взрослые: <span class="minus">-</span><input id="adults" type="text" placeholder="2"><span class="plus">+</span></label></p>
+                <p><label for="children">Дети: <span class="minus">-</span><input id="children" type="text" placeholder="0"><span class="plus">+</span></label></p>
+                <button class="button" type="submit">Найти</button>    
+            </form>
+            <button class="modal-close" type="button"></button>
+        </section>
     </body>
 </html>
