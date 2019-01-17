@@ -125,6 +125,17 @@ ul {
     background-color: #ffffff;
     text-align: center;
     padding: 60px 0 40px 0;
+    position: relative;
+}
+.preview-tagline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -57px;
+    width: 1200px;
+    height: 57px;
+    background-image: url('images/background-shape.png');
+    background-repeat: none;
 }
 .preview-tagline p {
     width: 576px;
@@ -139,4 +150,33 @@ ul {
 }
 .preview-tagline p:nth-child(2) {
     color: #333333;
+}
+
+.features-list {
+    width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.features-list * {
+    margin: 0;
+    padding: 0;
+}
+.features-list-item {
+    width: 33%;
+    flex-grow: 1;
+    height: 256px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px dashed red;
+}
+.features-list-item div {
+    margin: 60px auto;
+    width: 260px;
+    text-align: center;
+}
+.with-picture {
+    display: flex;
+    flex-flow: row nowrap; 
+    width: 100%;
+    padding: 0;
 }
