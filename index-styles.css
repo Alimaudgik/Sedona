@@ -162,7 +162,6 @@ ul {
     display: flex;
     width: 100%;
     flex-flow: column nowrap;
-    border: 1px dashed red;
 }
 .features-list-item,
 .recomendations,
@@ -176,7 +175,6 @@ ul {
     height: 256px;
     box-sizing: border-box;
     color: #ffffff;
-    border: 1px dashed red;
 
 }
 .recomendations {
@@ -186,7 +184,7 @@ ul {
 .recomendations-item {
     flex-grow: 1;
     width: 100%;
-    border: 1px dashed red;
+    
 }
 .without-picture-item div,
 .recomendations-item div,
@@ -195,20 +193,38 @@ ul {
     margin: 40px auto 60px;
     text-align: center;
 }
-.with-picture div .number {
+.with-picture div .number,
+.without-picture-item div .number {
     margin: 30px auto;
-}
-.first {
-    order: 1;
-}
-.second {
-    order: 2;
-}
+}/*
+.first {order: 1;} .second {order: 2;}*/
 .third {
     order: 3;
 }
 .fourth {
     order: 4;
+}
+
+.recomendations-item div {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 85px;
+}
+.icon {
+    order: -1;
+    position: relative;
+    height: 76px;
+}
+.icon svg {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 0;
+}
+.recomendations-item div h3 {
+    margin: 30px auto;
+}
+.rec-tagline {
+    
 }
 
 /* FEATURES old
@@ -239,4 +255,98 @@ ul {
     flex-flow: row nowrap; 
     width: 100%;
     padding: 0;
+}*/
+
+.footer {
+    background-color: #ffffff;
+}
+.booking-form {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 55px;
+    width: 558px;
+}
+.booking-form h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+.booking-form p {
+    margin: 30px auto 50px;
+}
+.search-bottom {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 30px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    background: #766357;
+    border: none;
+    color: #ffffff;
+}
+.map {
+    margin: 0;
+}
+
+.footer-bottom * {
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom {
+    margin: 0;
+    background-color: #ffffff;
+    padding: 35px 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border: 1px dashed red;
+}
+.footer-bottom-item {
+    border: 1px dashed red;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    height: 48px;
+}
+.social-list {
+    display: flex;
+    width: 152px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+/*
+
+
+.fotter-bottom-item .hashtag {
+    font-size: 21px;
+    line-height: 48px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+#Layer_1 path {
+    fill: #231f20;
+}
+.htmlacademy p,
+.htmlacademy a {
+    display: inline-block;
+    line-height: 48px;
+}
+
+.social-list li .social-button {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    
+}
+/*a[href="twitter"]*/
+.social-button {
+
+    background-image: url('images/logo-twitter.svg');
+    
+    background-size: 17px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }*/
