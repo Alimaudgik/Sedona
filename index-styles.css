@@ -74,6 +74,11 @@ ul {
     left: 0;
     z-index: -1;
 }
+.hotels-container .landscape-Sedona {
+    top: -295px;
+    filter: blur(5px);
+    overflow: hidden;
+}
 .preview {
     margin: 0;
     padding: 0;
@@ -205,6 +210,7 @@ ul {
     order: 4;
 }
 
+
 .recomendations-item div {
     display: flex;
     flex-flow: column wrap;
@@ -225,6 +231,11 @@ ul {
 }
 
 .footer {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.booking {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -309,6 +320,35 @@ ul {
     fill: #231f20;
 }
 
+.georgius {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.georgius::before,
+.georgius::after {
+    content: '';
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background-color: #766357;
+    position: absolute;
+}
+.georgius::before {
+    left: -30px;
+}
+.georgius::after {
+    right: -30px;
+}
+
+
+
+/* ФОРМА ПОИСКА! */
 .search-form {
     display: none;
     width: 568px;
@@ -329,4 +369,10 @@ ul {
 }
 a:hover {
     box-shadow: 0 0 5px 0 #81b3d2;
+}
+
+
+/*hotels*/
+.current {
+
 }

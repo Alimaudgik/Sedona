@@ -32,7 +32,7 @@
                             <h2 class="hidden">Welcome</h2>
                             <img src="Images/Welcome.png" alt="Welcome" width="188" height="45">
                         </li>
-                        <li class="preview-list-item">
+                        <li class="preview-list-item georgius">
                             <h3 class="hidden">To the georgius</h3>
                             <img src="Images/to the gorgeous.png" alt="Welcome" width="176" height="30">
                         </li>
@@ -56,7 +56,7 @@
                     <li class="features-list-item with-picture first">
                         <div>
                             <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-                            <p class="number">№1</p>
+                            <p class="number">&mdash; №1 &mdash;</p>
                             <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                         </div>
                         <p><img src="images/features-1.png" alt="features" width="800" height="256"></p>
@@ -65,7 +65,7 @@
                         <p><img src="images/features-2.png" alt="Devil-most" width="800" height="256"></p>
                         <div>
                             <h3>ТАМ ЕСТЬ  Мост дьявола</h3>
-                            <p class="number">№2</p>
+                            <p class="number">&mdash; №2 &mdash;</p>
                             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </li>
@@ -161,49 +161,50 @@
                             <li class="without-picture-item">
                                 <div>
                                     <h3>НЕбольшая площадь</h3>
-                                    <p class="number">№3</p>
+                                    <p class="number">&mdash; №3 &mdash;</p>
                                     <p>ВСЕ достопримечательности находятся очень близко</p>
                                 </div>
                             </li>
                             <li class="without-picture-item">
                                 <div>
                                     <h3>Красивая дорога</h3>
-                                    <p class="number">№4</p>
+                                    <p class="number">&mdash; №4 &mdash;</p>
                                     <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
                                 </div>
                             </li>
                             <li class="without-picture-item">
                                 <div>
                                     <h3>Мало туристов</h3>
-                                    <p class="number">№5</p>
+                                    <p class="number">&mdash; №5 &mdash;</p>
                                     <p>Большинство едет в гранд каньон и толпится там</p>
                                 </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </section>   
+            </section>
+            <section class="booking">
+                <div class="booking-form">
+                    <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                    <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                    <button class="search-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+                    <section class="search-form">
+                        <form action="https://echo.htmlacademy.ru"method="POST">
+                            <p><label for="date-in">Дата заезда: <input id="date-in" type="date"></label></p>
+                            <p><label for="date-out">Дата выезда: <input id="date-out" type="date"></label></p>
+                            <p><label for="adults">Взрослые: <span class="minus">-</span><input id="adults" type="text" placeholder="2"><span class="plus">+</span></label></p>
+                            <p><label for="children">Дети: <span class="minus">-</span><input id="children" type="text" placeholder="0"><span class="plus">+</span></label></p>
+                            <button class="button" type="submit">Найти</button>
+                        </form>
+                        <button class="modal-close" type="button"></button>
+                    </section>
+                </div>
+                <section class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497867.76304765214!2d-112.11556271548314!3d34.94171940171354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sby!4v1547812068409" width="1200" height="424" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+            </section>
         </main>
         <footer class="footer">
-            <div class="booking-form">
-                <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="search-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-                <section class="search-form">
-                    <form action="https://echo.htmlacademy.ru"method="POST">
-                        <p><label for="date-in">Дата заезда: <input id="date-in" type="date"></label></p>
-                        <p><label for="date-out">Дата выезда: <input id="date-out" type="date"></label></p>
-                        <p><label for="adults">Взрослые: <span class="minus">-</span><input id="adults" type="text" placeholder="2"><span class="plus">+</span></label></p>
-                        <p><label for="children">Дети: <span class="minus">-</span><input id="children" type="text" placeholder="0"><span class="plus">+</span></label></p>
-                        <button class="button" type="submit">Найти</button>
-                    </form>
-                    <button class="modal-close" type="button"></button>
-                </section>
-            </div>
-            <section class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497867.76304765214!2d-112.11556271548314!3d34.94171940171354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sby!4v1547812068409" width="1200" height="424" frameborder="0" style="border:0" allowfullscreen></iframe>
-                
-            </section>
             <section class="footer-bottom">
                 <p class="hashtag">#visitSEDONA</p>
                 <ul class="social-list">
