@@ -74,11 +74,6 @@ ul {
     left: 0;
     z-index: -1;
 }
-.hotels-container .landscape-Sedona {
-    top: -295px;
-    filter: blur(5px);
-    overflow: hidden;
-}
 .preview {
     margin: 0;
     padding: 0;
@@ -288,9 +283,10 @@ ul {
     padding: 0;
 }
 
-.hashtag {
+.hashtag a {
     font-size: 21px;
     line-height: 26px;
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -302,13 +298,27 @@ ul {
     align-items: center;
     background-color: #81b3d2;
 }
+.social-button:hover {
+    background-color: #669ec0;
+}
+.social-button:active {
+    background-color: #5496bd;
+}
+.social-button:active svg {
+    opacity: 0.3;
+}
 .htmlacademy {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-
 }
+.htmlacademy a:hover svg path {
+    fill: #81b3d2;
+}
+.htmlacademy a:active svg path {
+    fill: #bdbbbc;
+} 
 .htmlacademy p {
     margin-right: 10px;
 }
@@ -374,5 +384,20 @@ a:hover {
 
 /*hotels*/
 .current {
+
+}
+
+.form-block {
+    width: 1200px;
+    height: 220px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.hotels-container .landscape-Sedona {
+    position: relative;
+    top: -295px;
+    filter: blur(10px);
 
 }
