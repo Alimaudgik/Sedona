@@ -192,13 +192,10 @@
                     <button class="search-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
                     <section class="search-button-form">
                         <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-                            <p><label for="date-in">Дата заезда:</label><input id="date-in" type="text" placeholder="27 июня 2019"></p>
-                            <p><label for="date-out">Дата выезда: </label><input id="date-out" type="text" placeholder="11 июля 2019"></p>
-                            <span class="people-form">
-                                <p class="people"><label for="adults">Взрослые: </label> <input id="adults" type="text" placeholder="2"></p>
-                                <p class="people"><label for="children">Дети: </label><input id="children" type="text" placeholder="0"></p>
-                            </span>
-                            
+                            <p class="date date-in"><label for="date-in">Дата заезда:</label><input id="date-in" type="text" placeholder="27 июня 2019"></p>
+                            <p class="date date-out"><label for="date-out">Дата выезда: </label><input id="date-out" type="text" placeholder="11 июля 2019"></p>
+                            <p class="people"><label for="adults">Взрослые: </label> <input id="adults" type="text" placeholder="2"></p>
+                            <p class="people children-flex"><label class="children" for="children">Дети: </label><input id="children" type="text" placeholder="0"></p>
                             <button class="button" type="submit">Найти</button>
                         </form>
                         <button class="modal-close" type="button"></button>
