@@ -31,6 +31,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+*:focus {
+    outline: none;
+}
 
 .menu {
     margin: 0;
@@ -246,9 +249,11 @@ ul {
 .booking-form h2 {
     font-size: 30px;
     line-height: 36px;
+    text-align: center;
 }
 .booking-form p {
     margin: 30px auto 50px;
+    text-align: center;
 }
 .search-button {
     font-size: 21px;
@@ -262,7 +267,7 @@ ul {
     border: none;
     color: #ffffff;
     border: none;
-    
+    margin-bottom: 0;
 }
 .search-button:hover {
     background-color: #604e43;
@@ -273,21 +278,25 @@ ul {
 }
 .search-button-form {
     position: relative;
-    margin-bottom: -20px;
+    margin-bottom: 0px;
     padding: 0;
 }
+
+
 .search-form {
     position: absolute;
     left: 0;
     right: 0;
-    border: 1px dashed red;
     background-color: #ffffff;
     padding: 55px;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.85)
 }
+
+
 .search-form .date,
 .search-form .button {
     margin: 0; padding: 0;
@@ -307,10 +316,11 @@ ul {
     flex: none;
     width: 115px;
     margin: 0;
-    padding: 0;
+    padding: 6px 12px;;
     text-align: left;
     font-weight: bold;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .search-form input {
@@ -318,16 +328,35 @@ ul {
     padding: 0;
     border: none;
     background-color: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
 } 
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+.search-form p input:focus {
+    
+    border: 2px solid #e5e5e5; 
+}
+
 .search-form .date-out {
     margin: 30px 0;
 }
 .search-form .date input {
     flex-grow: 1;
+    padding: 6px 12px;
 }
 .search-form .people input {
     width: 110px;
+    padding: 6px 12px;
+    box-sizing: border-box;
 }
+.search-form input::placeholder {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    
+} 
 .search-form .children {
     text-align: center
 }
@@ -338,12 +367,23 @@ ul {
     margin-bottom: 55px;
 }
 .search-form .button {
-    margin: 0;
-    padding: 0;
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PT Sants', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    padding: 15px 0;
+    border: none;
 }
-
-
-
+.search-form .button:hover {
+    background-color: #669ec0;
+}
+.search-form .button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
 
 
 
