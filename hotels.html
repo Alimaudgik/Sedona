@@ -18,7 +18,7 @@
                     </ul>
                     <ul class="menu-list-right">
                         <li class="menu-list-item"><a href="#">Карта штата</a></li>
-                        <li class="menu-list-item"><a href="hotels.html">Гостиницы</a></li>
+                        <li class="menu-list-item"><a class="current" href="hotels.html">Гостиницы</a></li>
                     </ul>
                     <li class="logo-COS"><a href="Index.html"><img src="images/Logo-CityOfSedona.png" alt="Logo City Of Sedona"></a></li>
                 </ul>
@@ -26,11 +26,41 @@
         </header>
         
         <main class="hotels-container">
-            <section class="form-block">
+            <section class="landscape-block">
                 <p class="landscape-Sedona"><img width="1200" hight="800" alt="Sedona landscape" src="images/background photo Sedona.jpg"></p>
                 <div class="hotel-form">
-                    <form>
-                        
+                    <form class="form-menu">
+                        <ul class="form-menu-list structure">
+                            <li class="form-menu-item"><h4>Инфракстутра</h4></li>
+                            <li class="form-menu-item">
+                                <label for="structure-1">Бассейн</label><input id="structure-1" type="checkbox">
+                            </li>
+                            <li class="form-menu-item">
+                                <label for="structure-2">Парковка</label><input id="structure-2" type="checkbox">
+                            </li>
+                            <li class="form-menu-item">
+                                <label for="structure-3">Wi-fi</label><input id="structure-3" type="checkbox">
+                            </li>
+                        </ul>
+                            <ul class="form-menu-list booking-type">
+                            <li class="form-menu-item"><h4>Тип жилья:</h4></li>
+                            <li class="form-menu-item">
+                                <label for="btype-1">Гостиница</label><input id="btype-1" type="checkbox">
+                            </li>
+                            <li class="form-menu-item">
+                                <label for="btype-2">Мотель</label><input id="btype-2" type="checkbox">
+                            </li>
+                            <li class="form-menu-item">
+                                <label for="btype-3">Аппартаменты</label><input id="btype-3" type="checkbox">
+                            </li>
+                        </ul>
+                        <ul class="form-menu-list price">
+                            <li class="form-menu-item"><h4>Стоимость в сутки (Р):</h4></li>
+                            <li class="form-menu-item">
+                                <label for="price"></label><input id="price" type="range" min="от 0" max="3000">
+                            </li>
+                            <li><button type="submit">Показать</button></li>
+                        </ul>
                     </form>
                 </div>
             </section>

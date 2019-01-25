@@ -68,15 +68,25 @@ ul {
 }
 .menu-list-item a:hover {
     box-shadow: 0 0 5px 0 #81b3d2;
+    color: #81b3d2;
+}
+.menu-list-item a:active {
+    box-shadow: 0 0 5px 0 #b2b2b2;
+    color: #b2b2b2;
 }
 .logo-COS {
     position: absolute;
     top: 0;
     left: calc(50% - 69px);
 }
+.landscape-block {
+    position: relative;
+    top: -15px;
+    overflow: hidden;
+}
 .landscape-Sedona {
     position: absolute;
-    top: -40px;
+    top: -95px;
     left: 0;
     z-index: -1;
 }
@@ -486,14 +496,43 @@ ul {
 
 
 /*hotels*/
-.current {
+.menu-list-item .current {
+    color: #766357;
+}
+/*filter: blur(10px);*/
 
+.hotels-container {
+    margin: 0;
+    padding: 0;
 }
 
-
-.hotels-container .landscape-Sedona {
-    position: relative;
+.hotels-container .landscape-block .landscape-Sedona {
     top: -295px;
     filter: blur(10px);
-
 }
+.hotels-container .landscape-block .hotel-form {
+    position: relative;
+    margin: 0;
+    padding: 40px 70px 25px;
+    width: 100%;
+
+    border: 1px dashed green;
+}
+
+.hotel-form .form-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 1056px;
+    border: 1px dashed #eeff00;
+    box-sizing: border-box;
+}
+.form-menu-list {
+    width: 240px;
+    border: 1px solid #009900;
+}
+.price {
+    margin-left: auto;
+    width: 310px;
+}
+
