@@ -548,5 +548,178 @@ ul {
     padding: 0;
 }
 
+.hotel-list {
+    margin: 0;
+    padding: 0 70px;
+    background-color: #fefefe;
+    border: 1px dashed red;
+}
+.hotel-list-menu, 
+.hotel-list-item {
+    margin: 0;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
 
+.hotel-list-menu *,
+.hotel-list-item * {
+    margin: 0;
+    padding: 0;
+}
+.hotel-list-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.sort-list,
+.rate-index {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.sort-list {
+    margin-left: 50px;
+}
+.rate-index {
+    margin-left: auto;
+}
+.rate-index .index-down,
+.rate-index .index-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: none;
+  border-bottom: 10px solid #cacaca;
+  margin-left: 10px;
+}
+
+.rate-index .index-up {
+    border-bottom: none;
+    border-top: 10px solid #cacaca;
+}
+.hotel-list-menu p {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.sort-list li {
+    font-size: 12px;
+    line-height: 18px;
+    color: #b1b1b1;
+    margin-left: 30px;
+    border-bottom: 1px dashed #81b3d2;
+}
+.sort-list li label:hover {
+    cursor: pointer;
+}
+.sort-list li:first-child {
+    color: #000000;
+    margin-left: 0;
+    border-bottom: none;
+}
+
+.hotel-list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 90px;
+    justify-content: flex-start;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+.hotel-image {
+    width: 135px;
+    height: 90px;
+    background-image: url('Images/Amara_Resort_Spa.png');
+    background-repeat: no-repeat;
+    background-size: 135px 90px;
+}
+
+.hotel-info {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 260px;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.hotel-info h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: 3px;
+; 
+}
+.hotel-info-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%
+}
+.price-booking {
+    margin-left: 5px;
+}
+.type-about, 
+.price-booking {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.hotel-type,
+.hotel-price {
+    color: #696969;
+    text-align: left;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.type-about .hotel-about,
+.price-booking .hotel-booking {
+    text-align: center;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 21px;
+    color: #ffffff;
+}
+.type-about .hotel-about {
+    background-color: #81b3d2;
+}
+.price-booking .hotel-booking {
+    background-color: #766357;
+    border: none;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+.hotel-rating {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    text-align: right;
+}
+.hotel-rating .stars {
+    width: 90px;
+    height: 17px;
+    background-image: url('Images/hotel-star.png');
+    background-size: 95px 17px;
+    background-repeat: repeat-x;
+}*/
 
