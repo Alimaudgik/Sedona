@@ -34,6 +34,10 @@ ul {
 *:focus {
     outline: none;
 }
+button:hover,
+button:checked {
+    cursor: pointer;
+}
 
 .menu {
     margin: 0;
@@ -516,8 +520,6 @@ ul {
     margin: 0;
     padding: 30px 70px;
     width: 100%;
-
-    border: 1px dashed green;
 }
 
 .hotel-form .form-menu {
@@ -529,10 +531,6 @@ ul {
 }
 .form-menu-list {
     width: 240px;
-}
-.price {
-    margin-left: auto;
-    width: 310px;
 }
 .form-menu-item {
     color: #ffffff;
@@ -551,6 +549,9 @@ ul {
 .form-menu-item:first-child {
     margin-bottom: 30px;
 }
+.price .form-menu-item:first-child {
+    margin-bottom: 15px;
+}
 .form-menu-item:last-child {
     margin-bottom: 0;
 }
@@ -568,6 +569,7 @@ ul {
     border-radius: 4px;
     border: 2px solid #ffffff;
 }
+
 .form-menu-item input:checked + .checkbox:after {
     content: '';
     position: absolute;
@@ -579,6 +581,69 @@ ul {
     border-bottom: 4px solid #ffffff;
     transform: rotate(-45deg);
 }
+.form-menu-item input:disabled + .checkbox::before,
+.form-menu-item input:disabled + .checkbox::after {
+    border-color: #6a6a6a;
+}
+
+.price {
+    margin-left: auto;
+    width: 310px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.price * {
+    margin: 0;
+    padding: 0;
+}
+.price .price-rate {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.price .price-rate span {
+    display: inline;
+}
+
+.price .price-rate p {
+    width: calc(50% - 2px);
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+.from {
+    border-right: 1px solid #ffffff;
+}
+.to {
+    border-left: 1px solid #ffffff;
+}
+.price input[type='range'] {
+    overflow: hidden;
+    width: 100%;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.price .hotel-button {
+    margin-top: auto;
+     text-align: center;
+}
+.price li button {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    padding: 5px 35px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
 
 
@@ -586,7 +651,6 @@ ul {
     margin: 0;
     padding: 0 70px;
     background-color: #fefefe;
-    border: 1px dashed red;
 }
 .hotel-list-menu, 
 .hotel-list-item {
@@ -647,10 +711,16 @@ ul {
 }
 .sort-list li label:hover {
     cursor: pointer;
+    color: #81b3d2;
 }
 .sort-list li:first-child {
     color: #000000;
     margin-left: 0;
+    border-bottom: none;
+}
+
+.sort-list .hotel-current {
+    color: #81b3d2;
     border-bottom: none;
 }
 
@@ -667,9 +737,17 @@ ul {
 .hotel-image {
     width: 135px;
     height: 90px;
-    background-image: url('Images/Amara_Resort_Spa.png');
     background-repeat: no-repeat;
     background-size: 135px 90px;
+}
+.amara {
+    background-image: url('Images/Amara_Resort_Spa.png')
+}
+.desert {
+    background-image: url('Images/Desert_Queen.png');
+}
+.villas {
+    background-image: url('Images/Villas_Al_Poco.png');
 }
 
 .hotel-info {
@@ -731,29 +809,35 @@ ul {
     border: none;
 }
 
-/*
-
-
-
-
-
-
-
-
-
-
 .hotel-rating {
     display: flex;
+    height: 100%;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: flex-end;
     margin-left: auto;
     text-align: right;
 }
 .hotel-rating .stars {
-    width: 90px;
+    
     height: 17px;
-    background-image: url('Images/hotel-star.png');
-    background-size: 95px 17px;
+    background-image: url('Images/hotel-star-long.png');
+    background-size: 24px 17px;
     background-repeat: repeat-x;
-}*/
+}
+.four-stars {
+    width: 96px;
+}
+.three-stars {
+    width: 72px;
+}
+.two-stars {
+    width: 48px;
+}
+
+
+
+
+
+
 
