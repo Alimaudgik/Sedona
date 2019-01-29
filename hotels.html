@@ -29,35 +29,35 @@
             <section class="landscape-block">
                 <p class="landscape-Sedona"><img width="1200" hight="800" alt="Sedona landscape" src="images/background photo Sedona.jpg"></p>
                 <div class="hotel-form">
-                    <form class="form-menu">
+                    <form class="form-menu" action="https://echo.htmlacademy.ru" method="POST">
                         <ul class="form-menu-list structure">
                             <li class="form-menu-item"><h4>Инфракстутра</h4></li>
                             <li class="form-menu-item">
-                                <label for="structure-1">Бассейн</label><input id="structure-1" type="checkbox">
+                                <input class="hidden" id="structure-1" type="checkbox" checked><label class="checkbox" for="structure-1">Бассейн</label>
                             </li>
                             <li class="form-menu-item">
-                                <label for="structure-2">Парковка</label><input id="structure-2" type="checkbox">
+                                <input class="hidden" id="structure-2" type="checkbox"><label class="checkbox" for="structure-2">Парковка</label>
                             </li>
                             <li class="form-menu-item">
-                                <label for="structure-3">Wi-fi</label><input id="structure-3" type="checkbox">
+                                <input class="hidden" id="structure-3" type="checkbox"><label class="checkbox" for="structure-3">Wi-fi</label>
                             </li>
                         </ul>
                             <ul class="form-menu-list booking-type">
                             <li class="form-menu-item"><h4>Тип жилья:</h4></li>
                             <li class="form-menu-item">
-                                <label for="btype-1">Гостиница</label><input id="btype-1" type="checkbox">
+                                <input class="hidden" id="btype-1" type="checkbox" checked><label class="checkbox" for="btype-1">Гостиница</label>
                             </li>
                             <li class="form-menu-item">
-                                <label for="btype-2">Мотель</label><input id="btype-2" type="checkbox">
+                                <input class="hidden" id="btype-2" type="checkbox" checked><label class="checkbox" for="btype-2">Мотель</label>
                             </li>
                             <li class="form-menu-item">
-                                <label for="btype-3">Аппартаменты</label><input id="btype-3" type="checkbox">
+                                <input class="hidden"  id="btype-3" type="checkbox" checked><label class="checkbox" for="btype-3">Аппартаменты</label>
                             </li>
                         </ul>
                         <ul class="form-menu-list price">
                             <li class="form-menu-item"><h4>Стоимость в сутки (Р):</h4></li>
                             <li class="form-menu-item">
-                                <label for="price"></label><input id="price" type="range" min="от 0" max="3000">
+                                <label class="range" for="price"></label><input id="price" type="range" min="от 0" max="5000" value="3000" step="10">
                             </li>
                             <li class="form-menu-item"><button type="submit">Показать</button></li>
                         </ul>
@@ -65,6 +65,7 @@
                 </div>
             </section>
             <section class="hotels-content">
+<<<<<<< HEAD
                 <ul class="hotel-list">
                     <li class="hotel-list-menu">
                         <p>Найдено:</p>
@@ -115,6 +116,24 @@
                     </li>
                 </ul>
 
+=======
+                <form class="hotels-content-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <ul class="hotels-content-list">
+                        <li class="hotels-content-item hotels-menu">
+                            <p>Найдено:<span></span></p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li class="hotels-content-item hotels-preview"></li>
+                        <li class="hotels-content-item hotels-preview"></li>
+                        <li class="hotels-content-item hotels-preview"></li>
+                    </ul>
+                </form>
+>>>>>>> 3e0b94d740698cef098a21734ee43a97d2a179c5
             </section>
             
             
