@@ -296,11 +296,15 @@ button:checked {
     padding: 0;
 }
 
-
+@keyframes search-move {
+    0% {left:-200%;}
+    70% {left: 100px;}
+    100% {left: 0;}
+}
 .search-form {
     position: absolute;
-    left: 0;
-    right: 0;
+    /*left: -200%;*/
+    top: 0;
     background-color: #ffffff;
     padding: 55px;
     display: none;
@@ -309,12 +313,20 @@ button:checked {
     box-sizing: border-box;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.85)
 }
+.modal-show {
+    display: flex;
+    animation: search-move 2s infinite;
+    animation-iteration-count: 1;
+}
 
 
 .search-form .date,
 .search-form .button {
     margin: 0; padding: 0;
     width: 100%;
+}
+.search-form .date {
+    position: relative;
 }
 .search-form .people {
     margin: 0; padding: 0;
@@ -359,6 +371,14 @@ button:checked {
     flex-grow: 1;
     padding: 6px 12px;
 }
+
+.date svg {
+    fill: #a9a9a9;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
 .search-form .people input {
     width: 110px;
     padding: 6px 12px;
@@ -616,6 +636,10 @@ button:checked {
     line-height: 21px;
     text-align: center;
 }
+.hotel-rating .rate-points {
+    padding: 5px 15px;
+    background-color: #f2f2f2;
+}
 .from {
     border-right: 1px solid #ffffff;
 }
@@ -694,9 +718,19 @@ button:checked {
 }
 
 .rate-index .index-up {
-    border-bottom: none;
-    border-top: 10px solid #cacaca;
+    transform: rotate(180deg)
+
 }
+.index-down:hover,
+.index-up:hover {
+    border-bottom-color: #231f20;
+}
+.index-down:active,
+.index-up:active,
+.rate-index .index-current {
+    border-bottom-color: #81b3d2;
+}
+
 .hotel-list-menu p {
     font-size: 21px;
     line-height: 26px;
@@ -709,7 +743,7 @@ button:checked {
     margin-left: 30px;
     border-bottom: 1px dashed #81b3d2;
 }
-.sort-list li label:hover {
+.sort-list li:hover {
     cursor: pointer;
     color: #81b3d2;
 }
@@ -720,7 +754,7 @@ button:checked {
 }
 
 .sort-list .hotel-current {
-    color: #81b3d2;
+    color: #000000;
     border-bottom: none;
 }
 
