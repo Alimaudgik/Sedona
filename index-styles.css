@@ -299,6 +299,7 @@ button:checked {
 @keyframes search-move {
     0% {left:-200%;}
     70% {left: 100px;}
+    90% {left: -50px}
     100% {left: 0;}
 }
 .search-form {
