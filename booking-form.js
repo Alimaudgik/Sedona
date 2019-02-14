@@ -23,7 +23,7 @@ if (Popup.classList.contains("modal-show")) {
 window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (evt.keyCode === 27) {
-        if (Popup) {
+        if (bookingForm.classList.contains("modal-show")) {
             bookingForm.classList.remove("modal-show");
         }
     }
